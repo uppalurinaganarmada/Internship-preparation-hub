@@ -1,71 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Internship Preparation Hub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internship Preparation Hub</title>
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            margin:0;
-            background:#f4f4f4;
-        }
+<style>
 
-        header{
-            background:#2c3e50;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
-        nav{
-            background:#34495e;
-            padding:10px;
-            text-align:center;
-        }
+body{
+    background:#f4f6f9;
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:15px;
-            font-weight:bold;
-        }
+header{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
 
-        .container{
-            width:80%;
-            margin:auto;
-            padding:20px;
-        }
+nav{
+    background:#34495e;
+    padding:15px;
+    text-align:center;
+}
 
-        .card{
-            background:white;
-            padding:20px;
-            margin-bottom:20px;
-            border-radius:10px;
-            box-shadow:0 2px 8px rgba(0,0,0,0.1);
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
 
-        h2{
-            color:#2c3e50;
-        }
+.container{
+    width:90%;
+    margin:auto;
+    padding:20px;
+}
 
-        li{
-            padding:5px;
-        }
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0px 2px 8px rgba(0,0,0,0.1);
+}
 
-        footer{
-            background:#2c3e50;
-            color:white;
-            text-align:center;
-            padding:15px;
-        }
-    </style>
+h2{
+    color:#2c3e50;
+    margin-bottom:15px;
+}
+
+details{
+    margin-bottom:12px;
+    background:#ecf0f1;
+    padding:12px;
+    border-radius:6px;
+}
+
+summary{
+    cursor:pointer;
+    font-weight:bold;
+}
+
+p{
+    margin-top:10px;
+    line-height:1.6;
+}
+
+ul{
+    margin-left:20px;
+}
+
+li{
+    margin:10px 0;
+}
+
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
     <h1>Internship Preparation Hub</h1>
-    <p>Your One-Stop Resource for Internship Success</p>
+    <p>Learn • Practice • Succeed</p>
 </header>
 
 <nav>
@@ -77,65 +110,184 @@
 
 <div class="container">
 
-    <div class="card">
-        <h2>Welcome</h2>
-        <p>
-            This website helps students prepare for internships and placements
-            by providing Python questions, SQL questions, resume tips,
-            and HR interview questions.
-        </p>
-    </div>
+<div class="card">
+    <h2>Welcome</h2>
+    <p>
+        This platform helps students prepare for internships,
+        placements and interviews by providing Python, SQL,
+        Resume and HR interview preparation resources.
+    </p>
+</div>
 
-    <div class="card" id="python">
-        <h2>🐍 Python Interview Questions</h2>
-        <ul>
-            <li>What is the difference between List and Tuple?</li>
-            <li>What is a Dictionary?</li>
-            <li>What are Functions in Python?</li>
-            <li>Explain Exception Handling.</li>
-            <li>What is OOP in Python?</li>
-        </ul>
-    </div>
+<div class="card" id="python">
 
-    <div class="card" id="sql">
-        <h2>🗄️ SQL Interview Questions</h2>
-        <ul>
-            <li>What is SQL?</li>
-            <li>Difference between DELETE, DROP and TRUNCATE?</li>
-            <li>What are Joins?</li>
-            <li>What is a Primary Key?</li>
-            <li>What is a Foreign Key?</li>
-            <li>Explain GROUP BY.</li>
-        </ul>
-    </div>
+<h2>🐍 Python Interview Questions</h2>
 
-    <div class="card" id="resume">
-        <h2>📄 Resume Tips</h2>
-        <ul>
-            <li>Keep the resume concise.</li>
-            <li>Highlight relevant skills.</li>
-            <li>Add projects and certifications.</li>
-            <li>Use professional formatting.</li>
-            <li>Tailor the resume to the job role.</li>
-        </ul>
-    </div>
+<details>
+<summary>What is the difference between List and Tuple?</summary>
+<p>
+List is mutable (can be modified).
+Tuple is immutable (cannot be modified).
+Lists use [] while tuples use ().
+</p>
+</details>
 
-    <div class="card" id="hr">
-        <h2>🎤 HR Interview Questions</h2>
-        <ul>
-            <li>Tell me about yourself.</li>
-            <li>Why should we hire you?</li>
-            <li>What are your strengths?</li>
-            <li>What are your weaknesses?</li>
-            <li>Where do you see yourself in 5 years?</li>
-        </ul>
-    </div>
+<details>
+<summary>What is a Dictionary?</summary>
+<p>
+A Dictionary stores data in key-value pairs.
+Example:
+{'name':'Narmada','age':21}
+</p>
+</details>
+
+<details>
+<summary>What is Exception Handling?</summary>
+<p>
+Exception handling helps manage runtime errors using
+try, except, else and finally blocks.
+</p>
+</details>
+
+<details>
+<summary>What are Functions?</summary>
+<p>
+Functions are reusable blocks of code that perform
+specific tasks and improve code reusability.
+</p>
+</details>
+
+<details>
+<summary>What is OOP?</summary>
+<p>
+Object Oriented Programming is a programming paradigm
+based on classes and objects.
+Concepts include inheritance, polymorphism,
+encapsulation and abstraction.
+</p>
+</details>
+
+</div>
+
+<div class="card" id="sql">
+
+<h2>🗄️ SQL Interview Questions</h2>
+
+<details>
+<summary>What is SQL?</summary>
+<p>
+SQL stands for Structured Query Language.
+It is used to manage and manipulate relational databases.
+</p>
+</details>
+
+<details>
+<summary>Difference between DELETE, DROP and TRUNCATE?</summary>
+<p>
+DELETE removes selected rows.<br>
+TRUNCATE removes all rows quickly.<br>
+DROP removes the entire table structure.
+</p>
+</details>
+
+<details>
+<summary>What are Joins?</summary>
+<p>
+Joins combine data from multiple tables.
+Examples include INNER JOIN, LEFT JOIN,
+RIGHT JOIN and FULL JOIN.
+</p>
+</details>
+
+<details>
+<summary>What is a Primary Key?</summary>
+<p>
+A Primary Key uniquely identifies each record in a table.
+It cannot contain NULL values.
+</p>
+</details>
+
+<details>
+<summary>What is a Foreign Key?</summary>
+<p>
+A Foreign Key creates a relationship between two tables.
+It references the Primary Key of another table.
+</p>
+</details>
+
+</div>
+
+<div class="card" id="resume">
+
+<h2>📄 Resume Tips</h2>
+
+<ul>
+<li>Keep your resume concise and professional.</li>
+<li>Add relevant projects and certifications.</li>
+<li>Use action verbs like Developed, Created, Designed.</li>
+<li>Highlight technical and soft skills.</li>
+<li>Customize your resume for each job role.</li>
+<li>Proofread before submitting.</li>
+</ul>
+
+</div>
+
+<div class="card" id="hr">
+
+<h2>🎤 HR Interview Questions</h2>
+
+<details>
+<summary>Tell me about yourself.</summary>
+<p>
+I am a motivated graduate with skills in Python,
+SQL, HTML and CSS. I enjoy building projects and
+continuously learning new technologies.
+</p>
+</details>
+
+<details>
+<summary>Why should we hire you?</summary>
+<p>
+I am a quick learner, hardworking and eager to
+contribute to the organization while improving
+my technical and professional skills.
+</p>
+</details>
+
+<details>
+<summary>What are your strengths?</summary>
+<p>
+My strengths include problem-solving,
+adaptability, teamwork and continuous learning.
+</p>
+</details>
+
+<details>
+<summary>What are your weaknesses?</summary>
+<p>
+I sometimes spend extra time perfecting my work,
+but I am learning to balance quality and deadlines.
+</p>
+</details>
+
+<details>
+<summary>Where do you see yourself in 5 years?</summary>
+<p>
+I see myself as a skilled professional contributing
+to impactful projects and taking on greater
+responsibilities within the organization.
+</p>
+</details>
+
+</div>
 
 </div>
 
 <footer>
-    © 2026 Internship Preparation Hub
+    <p>Internship Preparation Hub | Developed by Naga Narmada</p>
 </footer>
 
+</body>
+</html>
 </body>
 </html>
